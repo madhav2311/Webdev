@@ -1,0 +1,35 @@
+h1{
+    color:rgb(104, 169, 5);
+}
+body{
+    background-color: black;
+}
+a{
+    color:greenyellow;
+    padding:5px ;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bolder;
+}
+hr{
+    border:none;
+    background-color: greenyellow;
+    height: 2px;
+}
+p{
+     border-width:3px solid rgb(125,125,125);
+}
+.odd{
+    font-family: Momo,Times New Roman, Times, serif;
+    font-size: x-large;
+    color:blue;
+   
+}
+.even{
+    font-family: "Momo";
+    font-size: x-large;
+    color:rgb(209, 9, 9);
+}
+@font-face {
+    font-family:Momo;
+    src: url(/fonts/MomoSignature-Regular.ttf);
+}
