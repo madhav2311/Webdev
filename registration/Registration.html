@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height:100vh;
+
+        }
+        form{
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            border-radius: 12px;
+            width:350px;
+            padding: 0px 32px 20px 20px;
+            
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            display:block;
+            
+            
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+        input[type="text"],input[type="email"],input[type="password"]{
+            padding: 5px;
+            width: 100%;
+            box-shadow: 0 ;
+            border:1px solid rgb(215, 214, 213);
+            margin-top: 10px;
+            border-radius: 6px;
+            
+
+        }
+        .gender{
+            margin-top: 10px;
+
+        }
+        .check{
+            padding:1px;
+            cursor: pointer;
+        }
+        button{
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border:none;
+            background: rgb(11, 151, 206);
+            border-radius: 6px;
+            color:rgb(255, 255, 255);
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+           
+        }
+        button:hover{
+            background: rgb(106, 234, 74);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <form action="/templates/Borders.html">
+        <h2>Registration Form</h2>
+        <div>
+            <label for="Name">Name</label>
+            <input id="name" name="Name" type="text" required>
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email:</label>
+            <input id="Email" name="Email" type="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password</label>
+            <input id="pass" name="pass" type="password" required>
+        </div>
+        <br>
+        <div class="gender">
+            <label for="gender" >Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" required>
+            <label for="female">Female</label>
+          
+        </div>
+        <br>
+        <div class="check">
+        <input type="checkbox" name="accept" id="accept" required>
+        <label for="accept">I agree all the terms and conditions</label>
+        </div>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+    
+</body>
+</html>
